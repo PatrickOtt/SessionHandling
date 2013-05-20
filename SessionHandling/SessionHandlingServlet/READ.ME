@@ -1,0 +1,29 @@
+Hallo und herzlich willkommen zum nächsten Video.
+
+Heute möchte ich zeigen, wie Sitzungsverwaltung geht.
+
+Wozu brauchen wir das überhaupt? Was ist eine Sitzung?
+
+Also, damit der Server mich wieder erkennt, wenn ich von einer
+Seite zur nächste surfe und eventuell ein paar
+Artikel im Warenkorb habe, wäre es ja ärgerlich, wenn
+ich auf der nächsten Seite alle Artikel noch einmal 
+in den Warenkorb packen müsste, die ich schon drin 
+liegen hatte.
+Da unser Servlet aber per HTTP kommuniziert und HTTP
+bekanntlich ja ein zustandsloses Protokoll ist, also
+nach der Response von Server hat er auch schon wieder
+vergessen mit wem er sich gerade unterhalten hat, müssen
+wir uns etwas überlegen, wie wir Daten während einer Sitzung
+also z.B. dem Besuch eines Online-Shops bis zum 
+Beenden des Browsers irgendwie speichern können. 
+
+Und da kommt unsere Sitzung (HttpSession) ins Spiel.
+An so ein HttpSession-Object können wir eine Menge 
+Daten binden, die wir dann immer wieder, nach einen 
+Seitenwechsel zum Beispiel, auslesen können und so
+unserem Besucher seinen aktuellen Warenkorb zur Verfügung
+stellen.
+
+Aber genug geschwafelt, gehen wir direkt zum praktischen
+Teil über... 
